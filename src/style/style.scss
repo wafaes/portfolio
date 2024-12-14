@@ -1,0 +1,219 @@
+@use "variables.scss" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: $font-family1;
+  src: url('/assets/fonts/NotoSerifDisplay-ExtraCondensed.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family2;
+  src: url('../assets/fonts/Sloop\ Script\ Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: $font-family1, sans-serif;
+  background: radial-gradient(circle, $background-color1, $background-color2);
+  color: white;
+  background-image: url($background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu {
+  margin: $spacing-peke;
+  font-size: $font-size-menu;
+  word-spacing: $spacing-medium;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+
+.ola {
+  margin: $spacing-large;
+}
+
+.portada {
+  align-items: center;
+  display: inline;
+  text-align: center;
+  padding-top: 400px;
+
+  .word1 {
+    font-size: $font-size-word1;
+    font-weight: $font-weight-light;
+  }
+
+  .word2 {
+    font-size: $font-size-grande;
+    font-weight: $font-weight-medium;
+    font-family: $font-family2;
+  }
+
+  .word3 {
+    font-size: $font-size-muygrande;
+    font-weight: $font-weight-light;
+  }
+
+  .word4 {
+    font-size: $font-size-word4;
+    font-weight: $font-weight-light;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  /*align-items: center;*/
+
+  .introtext {
+    text-align: left;
+    font-size: $font-size-introtext;
+    font-weight: $font-weight-light;
+    width: 650px;
+    height: 500px;
+    margin: $spacing-peke;
+  }
+
+  .imgcontainer {
+    width: 35%;
+  }
+
+  img {
+    width: 100%;
+    /*margin: $spacing-medium;*/
+  }
+}
+
+#skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 300px;
+  width: 60%;
+
+
+  .skillstitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: $font-size-muygrande;
+    align-items: center;
+
+      .word5 {
+          font-family: $word5;
+          font-size: $font-size-grande;
+          font-weight: $font-weight-light;
+        }
+
+        .word6 {
+          font-size: $font-size-word6;
+          font-weight: $font-weight-light;
+          font-family: $word6;
+        }
+
+  }
+
+  img {
+    width: $spacing-peke;
+    height: $spacing-peke;
+    margin: 0 $spacing-medium;
+    
+  }
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+
+  .project {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: $spacing-peke;
+
+    img {
+      width: 400px;
+      height: 300px;
+      margin: 0 $spacing-medium;
+    }
+  }
+}
+
+.projecttitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: $font-size-grande;
+  align-items: center;
+
+  .word5 {
+    font-family: $word5;
+    font-size: $font-size-grande;
+    font-weight: $font-weight-light;
+  }
+
+  .word6 {
+    font-size: $word6;
+    font-weight: $font-weight-light;
+    font-family: $word6;
+  }
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 40px;
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: $background-color2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
