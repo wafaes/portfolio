@@ -14,6 +14,5 @@ Portfolio de una desarrolladora que encontré en una web de portfolios de desarr
 
 
 ## Enlace figma
-[clic aquí](https://www.figma.com/proto/KYEdEiDeRu5WCsL1x0RX48/Untitled?node-id=2-2)
-En un principio tenía pensado dejar los proyectos en formato cards, sin embargo lo acabé haciendo con swiper. El fondo del figma se ve infinitamente mejor que la web porque las imágenes están posicionadas una a una a mano. Tuve que importar el fondo en formato jpeg y convertirlo en el background-image de mi página. 
+En un principio tenía pensado dejar los proyectos en formato cards, sin embargo lo acabé haciendo con swiper. El fondo del figma se ve infinitamente mejor que la web porque las imágenes están posicionadas una a una a mano. Tuve que importar el fondo en formato jpeg y convertirlo en el background-image de mi página. Enlace para visualizar el prototipo en figma: [enlace](https://www.figma.com/proto/KYEdEiDeRu5WCsL1x0RX48/Untitled?node-id=2-2)
 
