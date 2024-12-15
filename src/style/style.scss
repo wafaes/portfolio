@@ -131,11 +131,16 @@ body {
 
   }
 
+  
+}
+.skills{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   img {
     width: $spacing-peke;
     height: $spacing-peke;
-    margin: 0 $spacing-medium;
-    
+    margin: 13px $spacing-medium;
   }
 }
 
@@ -150,7 +155,7 @@ body {
   .project {
     text-align: center;
     font-size: 27px;
-    margin-bottom: $spacing-peke;
+    margin-bottom: $spacing-large;
 
     img {
       width: 400px;
@@ -167,6 +172,8 @@ body {
   margin-top: 100px;
   font-size: $font-size-grande;
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
 
   .word5 {
     font-family: $word5;
@@ -215,5 +222,57 @@ body {
     border: none;
     padding: 10px;
     cursor: pointer;
+  }
+}
+
+.containercontacto{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+    .contacto{
+    width: 40%;
+    background-color: $background-color-contacto;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+
+    
+    .icons{
+      margin-left: 90px;
+      width: 30px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      img{
+        margin-left: 10px;
+        
+      }
+      
+    }
+    input{
+      height: 23px;
+    }
+
+    input, textarea{
+      background-color: $background-color-inputs;
+      border-color: none;
+      border-radius: 3px;
+      margin-bottom: 7px;
+      width: 300px;
+      border-style: none;
+    }
+
+    .submit-btn{
+      width: 80px;
+      height: 30px;
+      background-color: $color-button;
+      color: black;
+      border-radius: 4px;
+      border-color: none;
+      border-style: none;
+    }
   }
 }
